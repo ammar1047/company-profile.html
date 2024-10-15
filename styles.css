@@ -4,146 +4,162 @@ body {
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-}
-
-/* Header Animation */
-.animated-header {
+  }
+  
+  /* Header Animation */
+  .animated-header {
     animation: slideInFromTop 1s ease-out;
-}
-
-.animated-title {
+  }
+  
+  .animated-title {
     animation: fadeIn 1.5s ease-in;
-}
-
-/* Footer Animation */
-.animated-footer {
+  }
+  
+  /* Footer Animation */
+  .animated-footer {
     animation: fadeIn 1.5s ease-in-out;
-}
-
-/* Animations */
-@keyframes slideInFromTop {
+  }
+  
+  /* Animations */
+  @keyframes slideInFromTop {
     0% {
-        transform: translateY(-100%);
-        opacity: 0;
+      transform: translateY(-100%);
+      opacity: 0;
     }
     100% {
-        transform: translateY(0);
-        opacity: 1;
+      transform: translateY(0);
+      opacity: 1;
     }
-}
-
-@keyframes fadeIn {
+  }
+  
+  @keyframes fadeIn {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
-}
-
-/* Buttons */
-#login-btn {
-    transition: transform 0.3s ease;
-}
-
-#login-btn:hover {
-    transform: scale(1.1);
-}
-
-/* Section Animations */
-.animate-left {
-    animation: slideInFromLeft 1.5s ease-out;
-}
-
-.animate-right {
-    animation: slideInFromRight 1.5s ease-out;
-}
-
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* Footer Style */
-footer {
+  }
+  
+  /* Buttons */
+  .button {
+    /* Default styles */
     background-color: #007bff;
-}
-
-/* Login Form Style */
-#login-form {
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive button styles */
+  @media only screen and (max-width: 600px) {
+    .button {
+      /* Adjust button size and padding for small screens */
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Section Animations */
+  .animate-left {
+    animation: slideInFromLeft 1.5s ease-out;
+  }
+  
+  .animate-right {
+    animation: slideInFromRight 1.5s ease-out;
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Footer Style */
+  footer {
+    background-color: #007bff;
+  }
+  
+  /* Login Form Style */
+  #login-form {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#login-form input[type="email"], #login-form input[type="password"] {
+  }
+  
+  #login-form input[type="email"], #login-form input[type="password"] {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-#login-form button[type="submit"] {
+  }
+  
+  #login-form button[type="submit"] {
     padding: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#login-form button[type="submit"]:hover {
+  }
+  
+  #login-form button[type="submit"]:hover {
     background-color: #0056b3;
-}
-
-/* Card Image Style */
-.card-img-top {
+  }
+  
+  /* Card Image Style */
+  .card-img-top {
     width: 100%;
     aspect-ratio: 16/9; /* Ubah rasio gambar sesuai kebutuhan */
     object-fit: cover;
-}
-
-/* Service Card Style */
-.service-card {
+  }
+  
+  /* Service Card Style */
+  .service-card {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.service-card .card-body {
+  }
+  
+  .service-card .card-body {
     padding: 20px;
-}
-
-.service-card .card-title {
+  }
+  
+  .service-card .card-title {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
-}
-
-.service-card .card-text {
+  }
+  
+  .service-card .card-text {
     font-size: 16px;
     color: #666;
-}
-
-/* Video Background Style */
-#bg-video {
+  }
+  
+  /* Video Background Style */
+  #bg-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -151,4 +167,4 @@ footer {
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-}
+  }
