@@ -113,3 +113,10 @@ footer {
 #login-form button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+/* Card Image Style */
+.card-img-top {
+    width: 100%;
+    aspect-ratio: 16/9; /* Ubah rasio gambar sesuai kebutuhan */
+    object-fit: cover;
+}
