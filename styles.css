@@ -120,3 +120,24 @@ footer {
     aspect-ratio: 16/9; /* Ubah rasio gambar sesuai kebutuhan */
     object-fit: cover;
 }
+
+/* Service Card Style */
+.service-card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .card-body {
+    padding: 20px;
+}
+
+.service-card .card-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-card .card-text {
+    font-size: 16px;
+    color: #666;
+}
