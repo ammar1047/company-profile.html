@@ -11,55 +11,66 @@
     <meta property="og:url" content="https://www.rentcarindonesia.com">
     <meta name="twitter:card" content="summary_large_image">
     <title>PT. RentCar Indonesia - Car Rental Services</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="text-white text-center py-4 bg-dark">
         <div class="container">
-            <h1>PT. RentCar Indonesia</h1>
-            <p>Your Trusted Car Rental Solution</p>
+            <h1 class="mb-2">PT. RentCar Indonesia</h1>
+            <p class="lead mb-4">Your Trusted Car Rental Solution</p>
             <nav aria-label="Primary Navigation">
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>PT. RentCar Indonesia is a trusted car rental company established in 2020. We offer a variety of vehicles, from city cars to SUVs and vans, to meet your transportation needs. With excellent service and a well-maintained fleet, we ensure your journey is both comfortable and safe.</p>
+    <section id="about" class="animate-left">
+        <div class="container py-5">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">PT. RentCar Indonesia is a trusted car rental company established in 2020. We offer a variety of vehicles, from city cars to SUVs and vans, to meet your transportation needs. With excellent service and a well-maintained fleet, we ensure your journey is both comfortable and safe.</p>
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-list">
-                <div class="service-item">
-                    <h3>Daily Car Rental</h3>
-                    <p>We provide daily car rental services at affordable prices with a complete fleet of vehicles.</p>
+    <section id="services" class="animate-right">
+        <div class="container py-5">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="service-item p-4 bg-white rounded shadow-sm h-100">
+                        <h3 class="text-center">Daily Car Rental</h3>
+                        <p class="text-center">We provide daily car rental services at affordable prices with a complete fleet of vehicles.</p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h3>Corporate Car Rental</h3>
-                    <p>Car rental services for corporate needs with a range of attractive packages.</p>
+                <div class="col-md-4">
+                    <div class="service-item p-4 bg-white rounded shadow-sm h-100">
+                        <h3 class="text-center">Corporate Car Rental</h3>
+                        <p class="text-center">Car rental services for corporate needs with a range of attractive packages.</p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h3>Long Term Rental</h3>
-                    <p>Long-term car rental for personal or business needs with flexible payment options.</p>
+                <div class="col-md-4">
+                    <div class="service-item p-4 bg-white rounded shadow-sm h-100">
+                        <h3 class="text-center">Long Term Rental</h3>
+                        <p class="text-center">Long-term car rental for personal or business needs with flexible payment options.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>For more information or bookings, please reach out to us via:</p>
-            <ul>
+    <section id="contact" class="animate-left">
+        <div class="container py-5">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">For more information or bookings, please reach out to us via:</p>
+            <ul class="list-unstyled text-center">
                 <li>Email: <a href="mailto:info@rentcarindonesia.com">info@rentcarindonesia.com</a></li>
                 <li>Phone: <a href="tel:+622112345678">+62 21 1234 5678</a></li>
                 <li>Address: Jl. Raya Kebayoran No. 123, Jakarta, Indonesia</li>
@@ -67,16 +78,19 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p>&copy; 2024 PT. RentCar Indonesia. All Rights Reserved.</p>
             <nav aria-label="Footer Navigation">
-                <ul>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#privacy">Privacy Policy</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#terms">Terms of Service</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
