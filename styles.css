@@ -1,66 +1,87 @@
-/* Basic Styling */
-* {
+/* General Style */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Header Animation */
+.animated-header {
+    animation: slideInFromTop 1s ease-out;
 }
 
-/* Header Section */
-header {
-    background-color: #333;
-    color: white;
+.animated-title {
+    animation: fadeIn 1.5s ease-in;
 }
 
-header h1 {
-    margin: 0;
+/* Footer Animation */
+.animated-footer {
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-.navbar-toggler {
-    background-color: #fff;
+/* Animations */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-/* User and Login Button */
-#user-name {
-    display: none; /* Initially hidden */
-}
-
-#login-btn, #signup-btn {
-    margin-left: 10px;
-}
-
-/* Collapsible Menu */
-#navbarMenu {
-    background-color: #444;
-}
-
-#navbarMenu .nav-link {
-    color: white;
-    text-align: center;
-}
-
-#navbarMenu .nav-link:hover {
-    text-decoration: underline;
-}
-
-/* Animation */
-.animate-left, .animate-right {
-    opacity: 0;
-    transform: translateX(-50px);
-    animation: slideInLeft 1s forwards;
-}
-
-@keyframes slideInLeft {
+@keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateX(-50px);
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
     }
+}
+
+/* Buttons */
+#login-btn {
+    transition: transform 0.3s ease;
+}
+
+#login-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Section Animations */
+.animate-left {
+    animation: slideInFromLeft 1.5s ease-out;
+}
+
+.animate-right {
+    animation: slideInFromRight 1.5s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Footer Style */
+footer {
+    background-color: #007bff;
 }
