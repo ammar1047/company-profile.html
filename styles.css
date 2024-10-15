@@ -141,3 +141,14 @@ footer {
     font-size: 16px;
     color: #666;
 }
+
+/* Video Background Style */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
