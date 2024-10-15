@@ -1,3 +1,4 @@
+/* Basic Styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,101 +7,53 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
     background-color: #f4f4f4;
 }
 
+/* Header Section */
 header {
     background-color: #333;
     color: white;
-    padding: 20px 0;
 }
 
-header h1, header p {
-    animation: fadeIn 1s ease-in;
+header h1 {
+    margin: 0;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+.navbar-toggler {
+    background-color: #fff;
 }
 
-nav ul li {
-    margin: 0 15px;
+/* User and Login Button */
+#user-name {
+    display: none; /* Initially hidden */
 }
 
-nav ul li a {
+#login-btn, #signup-btn {
+    margin-left: 10px;
+}
+
+/* Collapsible Menu */
+#navbarMenu {
+    background-color: #444;
+}
+
+#navbarMenu .nav-link {
     color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
+    text-align: center;
 }
 
-nav ul li a:hover {
+#navbarMenu .nav-link:hover {
     text-decoration: underline;
 }
 
-/* Container width adjustment */
-.container {
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-/* Section styling */
-section {
-    padding: 40px 0;
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #333;
-}
-
-section p, section ul {
-    text-align: center;
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Animations for sections */
-.animate-left {
+/* Animation */
+.animate-left, .animate-right {
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInLeft 1s forwards;
 }
 
-.animate-right {
-    opacity: 0;
-    transform: translateX(50px);
-    animation: slideInRight 1s forwards;
-}
-
-/* Service items styling */
-.service-item {
-    padding: 20px;
-    margin: 0 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.service-item:hover {
-    transform: scale(1.05);
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-}
-
-/* Animations */
 @keyframes slideInLeft {
     0% {
         opacity: 0;
@@ -109,24 +62,5 @@ footer {
     100% {
         opacity: 1;
         transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
     }
 }
