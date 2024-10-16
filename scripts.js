@@ -1,6 +1,21 @@
+import Flickity from 'flickity';
+
 document.addEventListener('DOMContentLoaded', function () {
     const loginForm = document.getElementById('login-form');
     const loginBtn = document.getElementById('login-btn');
+    const carousel = document.getElementById('hero-carousel');
+    const flkty = new Flickity(carousel, {
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true,
+        autoPlay: 3000,
+    });
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
 
     loginForm.addEventListener('submit', function (e) {
         e.preventDefault();

@@ -20,7 +20,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="animated-header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">PT. RentCar Indonesia</a>
@@ -49,14 +49,21 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section with Background Video -->
+        <!-- Hero Section with Slideshow Gambar Interaktif -->
         <section id="hero" class="d-flex align-items-center justify-content-center position-relative">
-            <video autoplay muted loop id="bg-video">
-                <source src="5963688-hd_1920_1080_25fps.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="hero-content text-center text-white">
-                <h1 class="display-4 animated-title">Explore the Best Car Rental Services</h1>
+            <div class="carousel" id="hero-carousel">
+                <div class="carousel-cell">
+                    <img src="image1.jpg" loading="lazy" alt="Image 1" />
+                </div>
+                <div class="carousel-cell">
+                    <img src="image2.jpg" loading="lazy" alt="Image 2" />
+                </div>
+                <div class="carousel-cell">
+                    <img src="image3.jpg" loading="lazy" alt="Image 3" />
+                </div>
+            </div>
+            <div class="hero-content text-center text-white animated-title">
+                <h1 class="display-4">Explore the Best Car Rental Services</h1>
                 <p class="lead">Comfort, Luxury, and Affordability in Every Ride</p>
                 <a href="#services" class="btn btn-primary btn-lg mt-4">Explore Our Services</a>
             </div>
@@ -69,10 +76,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <p> PT. RentCar Indonesia adalah perusahaan penyewaan mobil terpercaya yang telah beroperasi sejak 2020. Kami menyediakan beragam kendaraan, mulai dari mobil keluarga hingga mobil mewah, untuk kebutuhan pribadi maupun bisnis, dengan harga yang kompetitif.</p>
-                        <p> Dengan fokus pada layanan prima, kami memastikan setiap kendaraan dalam kondisi optimal melalui perawatan rutin. Selain itu, PT. RentCar Indonesia juga menawarkan kemudahan dalam proses penyewaan serta layanan tambahan seperti supir profesional.</p>   
+                        <p> D engan fokus pada layanan prima, kami memastikan setiap kendaraan dalam kondisi optimal melalui perawatan rutin. Selain itu, PT. RentCar Indonesia juga menawarkan kemudahan dalam proses penyewaan serta layanan tambahan seperti supir profesional.</p>   
                         <p> Kepercayaan pelanggan menjadi prioritas utama kami. Melalui layanan yang responsif dan fleksibel, PT. RentCar Indonesia berkomitmen untuk menjadi solusi transportasi yang andal, nyaman, dan aman bagi Anda.</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 animate-left">
                         <img src="Leonardo_Phoenix_Design_a_modern_and_professional_logo_for_PT_2.jpg" alt="About Us" class="img-fluid rounded shadow-sm">
                     </div>
                 </div>
@@ -84,7 +91,7 @@
             <div class="container">
                 <h2 class="text-center mb-5">Our Services</h2>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 animate-right">
                         <div class="card service-card shadow-lg">
                             <img src="civic.webp" class="card-img-top" alt="Daily Rentals" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
                             <div class="card-body">
@@ -93,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 animate-left">
                         <div class="card service-card shadow-lg">
                             <img src="images.jpeg" class="card-img-top" alt="Luxury Cars" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
                             <div class="card-body">
@@ -102,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 animate-right">
                         <div class="card service-card shadow-lg">
                             <img src="avanza.jpeg" class="card-img-top" alt="Monthly Rentals" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
                             <div class="card-body">
@@ -145,7 +152,7 @@
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true "></span>
-                        <span class="visually-hidden">Previous</span>
+                        < span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -185,13 +192,13 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 animated-footer">
         <div class="container text-center">
             <p >&copy; 2024 PT. RentCar Indonesia | All Rights Reserved</p>
             <p>Follow us on:
                 <a href="#" class="text-white"><i class="fab fa-facebook-f mx-2"></i></a>
                 <a href="#" class="text-white"><i class="fab fa-twitter mx-2"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-instagram mx-2"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram mx- 2"></i></a>
             </p>
         </div>
     </footer>
